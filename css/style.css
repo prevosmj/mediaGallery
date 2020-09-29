@@ -1,41 +1,95 @@
 .grid{
     margin-top: 3rem;
     display: grid;
-    grid-gap: 1rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
     grid-template-columns: 1fr;
+    background-color: #353c47;
+}
+body{
+    padding: .25rem;
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+    color: #afc3e3;
+    font-family: Helvetica, sans-serif;
+  }
+.navbar{
+    align-content: center;
+    margin-top: -0.5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #565b63;
+    width: 100%;
+}
+.navitem{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 1rem;
+}
+.navbar a{
+    color: #afc3e3;
+    padding: 14px 16px;
+    display: block
+}
+.navbar a.icon{
+    background: #565b63;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navbar a:hover {
+    background-color:white;
+    color: black;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+@media screen and (min-width: 550px){
+    body {width: 96%;}
+    .grid {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px){
+    body {width: 94%;}
+    .grid {grid-template-columns: repeat(3, 1fr);}
+    .navbar {display: flex; flex-direction: row; justify-content: space-between;}
 }
 @media screen and (min-width: 1280px) {
     body {width: 90%;}
     .grid {grid-template-columns: repeat(4, 1fr);}
 }
-
 .griditem{
     border-radius: 4px;
     padding: 4em;
-    background-color: var(--bg);
 }
 .thumb{
     padding-bottom: 100%;
     background-size: cover;
     background-position: center center;
     border-radius: 4px 4px 0 0;
+    border: 4px solid #afc3e3;
 }
-.one .thumb {background-image: url(img/snowyMountain1.jpg); background-size: 100%;}
-.two .thumb {background-image: url(img/snowyMountain2.jpg); background-size: 100%;}
-.three .thumb {background-image: url(img/snowyMountain3.jpg); background-size: 100%;}
-.four .thumb {background-image: url(img/snowyMountain4.jpg); background-size: 100%;}
-.five .thumb {background-image: url(img/snowyMountain5.jpg); background-size: 100%;}
-.six .thumb {background-image: url(img/snowyMountain6.jpg); background-size: 100%;}
-.seven .thumb {background-image: url(img/snowyMountain7.jpg); background-size: 100%;}
-.eight .thumb {background-image: url(img/snowyMountain8.jpg); background-size: 100%;}
-.nine .thumb {background-image: url(img/snowyMountain9.jpg); background-size: 100%;}
-.ten .thumb {background-image: url(img/snowyMountain10.jpg); background-size: 100%;}
-.eleven .thumb {background-image: url(img/snowyMountain11.jpg); background-size: 100%;}
-.twelve .thumb {background-image: url(img/snowyMountain12.jpg); background-size: 100%;}
-.thirteen .thumb {background-image: url(img/snowyMountain13.jpg); background-size: 100%;}
-.fourteen .thumb {background-image: url(img/snowyMountain14.jpg); background-size: 100%;}
-.fifteen .thumb {background-image: url(img/snowyMountain15.jpg); background-size: 100%;}
-.sixteen .thumb {background-image: url(img/snowyMountain16.jpg); background-size: 100%;}
+.one .thumb {background-image: url(../img/snowyMountain1.jpg);}
+.two .thumb {background-image: url(../img/snowyMountain2.jpg);}
+.three .thumb {background-image: url(../img/snowyMountain3.jpg);}
+.four .thumb {background-image: url(../img/snowyMountain4.jpg);}
+.five .thumb {background-image: url(../img/snowyMountain5.jpg);}
+.six .thumb {background-image: url(../img/snowyMountain6.jpg);}
+.seven .thumb {background-image: url(../img/snowyMountain7.jpg);}
+.eight .thumb {background-image: url(../img/snowyMountain8.jpg);}
+.nine .thumb {background-image: url(../img/snowyMountain9.jpg);}
+.ten .thumb {background-image: url(../img/snowyMountain10.jpg);}
+.eleven .thumb {background-image: url(../img/snowyMountain11.jpg);}
+.twelve .thumb {background-image: url(../img/snowyMountain12.jpg);}
+.thirteen .thumb {background-image: url(../img/snowyMountain13.jpg);}
+.fourteen .thumb {background-image: url(../img/snowyMountain14.jpg);}
+.fifteen .thumb {background-image: url(../img/snowyMountain15.jpg);}
+.sixteen .thumb {background-image: url(../img/snowyMountain16.jpg);}
 
 .card-content{
     padding: 0 0.5em 0.5em 0.5em;
@@ -47,11 +101,12 @@
     margin: 1rem 0 0 0;
     text-transform: uppercase;
     align-self: flex-start;
-    color: var(--text);
 }
 .card-text {
     font-size: .80em;
     line-height: 1.2;
     align-self: flex-start;
-    color: var(--text);
   }
+footer{
+    text-align: center;
+}
