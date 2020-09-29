@@ -1,0 +1,57 @@
+.grid{
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width: 1280px) {
+    body {width: 90%;}
+    .grid {grid-template-columns: repeat(4, 1fr);}
+}
+
+.griditem{
+    border-radius: 4px;
+    padding: 4em;
+    background-color: var(--bg);
+}
+.thumb{
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px 4px 0 0;
+}
+.one .thumb {background-image: url(img/snowyMountain1.jpg); background-size: 100%;}
+.two .thumb {background-image: url(img/snowyMountain2.jpg); background-size: 100%;}
+.three .thumb {background-image: url(img/snowyMountain3.jpg); background-size: 100%;}
+.four .thumb {background-image: url(img/snowyMountain4.jpg); background-size: 100%;}
+.five .thumb {background-image: url(img/snowyMountain5.jpg); background-size: 100%;}
+.six .thumb {background-image: url(img/snowyMountain6.jpg); background-size: 100%;}
+.seven .thumb {background-image: url(img/snowyMountain7.jpg); background-size: 100%;}
+.eight .thumb {background-image: url(img/snowyMountain8.jpg); background-size: 100%;}
+.nine .thumb {background-image: url(img/snowyMountain9.jpg); background-size: 100%;}
+.ten .thumb {background-image: url(img/snowyMountain10.jpg); background-size: 100%;}
+.eleven .thumb {background-image: url(img/snowyMountain11.jpg); background-size: 100%;}
+.twelve .thumb {background-image: url(img/snowyMountain12.jpg); background-size: 100%;}
+.thirteen .thumb {background-image: url(img/snowyMountain13.jpg); background-size: 100%;}
+.fourteen .thumb {background-image: url(img/snowyMountain14.jpg); background-size: 100%;}
+.fifteen .thumb {background-image: url(img/snowyMountain15.jpg); background-size: 100%;}
+.sixteen .thumb {background-image: url(img/snowyMountain16.jpg); background-size: 100%;}
+
+.card-content{
+    padding: 0 0.5em 0.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    margin: 1rem 0 0 0;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: var(--text);
+}
+.card-text {
+    font-size: .80em;
+    line-height: 1.2;
+    align-self: flex-start;
+    color: var(--text);
+  }
