@@ -67,6 +67,51 @@ a.navitem:hover{
     .navbar {display: flex; flex-direction: row; justify-content: space-between;}
   }
 
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: var(--text);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: var(--text);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
 
 @media screen and (min-width: 550px){
     body {width: 96%;}
@@ -124,7 +169,22 @@ a.navitem:hover{
     line-height: 1.2;
     align-self: flex-start;
   }
-
+button.card-more {
+    background: transparent;
+    padding: .45em .7em .4em .7em;
+    border-radius: 200px;
+    font-size: .7em;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--text);
+    border-color: var(--accent);
+ }
+ button.car-more:hover{
+     cursor: pointer;
+     color: var(--accent);
+     border-color: var(--accent);
+ }
 .modal{
     display: none;
     position: fixed;
@@ -140,7 +200,7 @@ a.navitem:hover{
     color: var(--text);
     margin: 1rem auto;
     padding: 1em;
-    width: 90%;
+    width: 75%;
     border-radius: 5px;
     animation: fadein .3s ease-in-out;
 }
@@ -151,13 +211,12 @@ a.navitem:hover{
     color: var(--text);
     font-size: 2em;
     font-weight: bold;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    position: relative;
+    top: 3px;
+    left: 99%;
     transition: all .3s ease-in;
 }
-.close:hover
-.close:focus{
+.close:hover{
     color: var(--accent);
     text-decoration: none;
     cursor: pointer;
@@ -174,7 +233,13 @@ a.navitem:hover{
     margin-top: 0;
     padding-top: 0;
 }
-@media screen and (min-width: 1280px) {.modal-body {grid-template-columns: 7fr 5fr;}}
+.mbody img{
+    margin-bottom: 1.5em;
+    size: 50%;
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 1100px) {.mbody {grid-template-columns: 7fr 5fr;}}
 footer{
     text-align: center;
 }

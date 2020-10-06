@@ -28,24 +28,83 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/snowyMountain2.jpg" style="width:100%">
+              <div class="text">Glassy Lake</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/snowyMountain6.jpg" style="width:100%">
+              <div class="text">Sunset Peak</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/snowyMountain12.jpg" style="width:100%">
+              <div class="text">Centerpiece</div>
+            </div>
+          
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/snowyMountain13.jpg" style="width:100%">
+                <div class="text">Faraway Peak</div>
+              </div>
+
+             <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/snowyMountain15.jpg" style="width:100%">
+                <div class="text">Space</div>
+             </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
         <main class="grid">
             <div class="item one">
-                <div id="originImg" class="thumb"></div>
+                <div class="thumb"></div>
                 <div class="card-content">
                     <h3 class="card-title">Mountain 1</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button1" class="card-more button"><strong>Modal</strong></button>
                 </div> 
             </div>
-            <div id="modalFunc" class="modal">
-                <span class="close">&times;</span>
-                <img class="minfo" id="fullImg">
-                <div id="caption"></div>
+            <div id="button1" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain1.jpg" alt="The First Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The First Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item two">
                 <div class="thumb"></div>
                 <div class="card-content">
                     <h3 class="card-title">Mountain 2</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button2" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button2" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain2.jpg" alt="The Second Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Second Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item three">
@@ -53,6 +112,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 3</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button3" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button3" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain3.jpg" alt="The Third Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Third Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item four">
@@ -60,6 +132,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 4</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button4" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button4" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain4.jpg" alt="The Fourth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Fourth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item five">
@@ -67,6 +152,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 5</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button5" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button5" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain5.jpg" alt="The Fifth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Fifth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item six">
@@ -74,6 +172,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 6</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button6" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button6" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain6.jpg" alt="The Sixth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Sixth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item seven">
@@ -81,6 +192,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 7</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button7" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button7" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain7.jpg" alt="The Seventh Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Seventh Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item eight">
@@ -88,6 +212,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 8</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button8" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button8" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain8.jpg" alt="The Eighth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Eighth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item nine">
@@ -95,12 +232,39 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 9</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button9" class="card-more button"><strong>Modal</strong></button>
                 </div>
-            </div><div class="item ten">
+            </div>
+            <div id="button9" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain9.jpg" alt="The Ninth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Ninth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item ten">
                 <div class="thumb"></div>
                 <div class="card-content">
                     <h3 class="card-title">Mountain 10</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button10" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button10" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain10.jpg" alt="The Tenth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Tenth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item eleven">
@@ -108,12 +272,39 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 11</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button11" class="card-more button"><strong>Modal</strong></button>
                 </div>
-            </div><div class="item twelve">
+            </div>
+            <div id="button11" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain11.jpg" alt="The Eleventh Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Eleventh Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item twelve">
                 <div class="thumb"></div>
                 <div class="card-content">
                     <h3 class="card-title">Mountain 12</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button12" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button12" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain12.jpg" alt="The Twelfth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Twelfth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item thirteen">
@@ -121,6 +312,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 13</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button13" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button13" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain13.jpg" alt="The Thirteenth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Thirteenth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item fourteen">
@@ -128,6 +332,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 14</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button14" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button14" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain14.jpg" alt="The Fourteenth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Fourteenth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item fifteen">
@@ -135,6 +352,19 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 15</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button15" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button15" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain15.jpg" alt="The Fifteenth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Fifteenth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item sixteen">
@@ -142,9 +372,25 @@
                 <div class="card-content">
                     <h3 class="card-title">Mountain 16</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
+                    <button data-modal="#button16" class="card-more button"><strong>Modal</strong></button>
+                </div>
+            </div>
+            <div id="button16" class="modal">
+                <div class="minfo">
+                    <span class="close">&times;</span>
+                    <div class="mbody">
+                        <img src="img/snowyMountain16.jpg" alt="The Sixteenth Snowy Mountain">
+                        <div class="mtext">
+                            <h3>The Sixteenth Snowy Mountain</h3>
+                            <p>Sure has a lot of snow on top of there, huh?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </body>
     <hr />
