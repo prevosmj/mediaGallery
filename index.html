@@ -2,29 +2,44 @@
 <html>
     <head>
         <title>Snowy Mountain Media Gallery</title>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="normalize" href="css/normalize.css">
         <link rel="mini_reset" href="css/mini_reset.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body style="background:#353c47;">
-        <nav class="navbar">
-            <a class="navitem">First</a>
-            <a class="navitem">Second</a>
-            <a class="navitem">Third</a>
-            <a class="navitem">Fourth</a>
-            <a class="navitem">Fifth</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <body>
+        <nav id="navi" class="navbar">
+            <a class="navitem">
+                <span class="menulabel">First</span>
+            </a>
+            <a class="navitem">
+                <span class="menulabel">Second</span>
+            </a>
+            <a class="navitem">
+                <span class="menulabel">Third</span>
+            </a>
+            <a class="navitem">
+                <span class="menulabel">Fourth</span>
+            </a>
+            <a class="navitem">
+                <span class="menulabel">Fifth</span>
+            </a>
+            <a href="javascript:void(0);" class="navitem trigram" onclick="toggleNav()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
         <main class="grid">
             <div class="item one">
-                <div class="thumb"></div>
+                <div id="originImg" class="thumb"></div>
                 <div class="card-content">
                     <h3 class="card-title">Mountain 1</h3>
                     <p class="card-text">Big Mountain oooweee this is cool</p>
                 </div> 
+            </div>
+            <div id="modalFunc" class="modal">
+                <span class="close">&times;</span>
+                <img class="minfo" id="fullImg">
+                <div id="caption"></div>
             </div>
             <div class="item two">
                 <div class="thumb"></div>
@@ -130,6 +145,7 @@
                 </div>
             </div>
         </main>
+        <script src="js/script.js"></script>
     </body>
     <hr />
     <footer style="margin: 0 auto;">&copy Mike Prevost 2020</footer>
