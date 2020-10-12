@@ -5,7 +5,9 @@
         <link rel="normalize" href="css/normalize.css">
         <link rel="mini_reset" href="css/mini_reset.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="js/splide-2.4.12/dist/css/splide.min.css">
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <nav id="navi" class="navbar">
@@ -28,43 +30,29 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 5</div>
-              <img src="img/snowyMountain2.jpg" style="width:100%">
-              <div class="text">Glassy Lake</div>
+        
+        <div id="slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/snowyMountain2.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/snowyMountain6.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/snowyMountain12.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/snowyMountain13.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/snowyMountain15.jpg">
+                    </li>
+                </ul>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 5</div>
-              <img src="img/snowyMountain6.jpg" style="width:100%">
-              <div class="text">Sunset Peak</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
-              <img src="img/snowyMountain12.jpg" style="width:100%">
-              <div class="text">Centerpiece</div>
-            </div>
-          
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
-                <img src="img/snowyMountain13.jpg" style="width:100%">
-                <div class="text">Faraway Peak</div>
-              </div>
-
-             <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
-                <img src="img/snowyMountain15.jpg" style="width:100%">
-                <div class="text">Space</div>
-             </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
+        </div>
+        <br>
 
         <main class="grid">
             <div class="item one">
@@ -390,7 +378,8 @@
         </main>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
+              crossorigin="anonymous"></script>
+        <script src="js/splide-2.4.12/dist/js/splide.min.js"></script>
         <script src="js/script.js"></script>
     </body>
     <hr />
